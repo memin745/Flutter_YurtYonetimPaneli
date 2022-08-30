@@ -50,7 +50,7 @@ class _KayitEklemePageState extends State<KayitEklemePage> {
    String dropdownValue1 = 'Hazırlık';
     Size size = MediaQuery.of(context).size;
     int _currentIndex = 0;
-    return Scaffold(
+    return Scaffold(//gelmiyot işte sorun o
         appBar: AppBar(
           backgroundColor: Color(0xFF808080),
           title: Text("Şehit Furkan Doğan Yurdu"),
@@ -218,7 +218,7 @@ class _KayitEklemePageState extends State<KayitEklemePage> {
                       validator: (value) {
                         if (value.isEmpty) {
                           isValidate = false;
-                          return "Üniversite Girniz";
+                          return "Üniversite Giriniz";
                         } else {
                           return null;
                         }
@@ -238,7 +238,7 @@ class _KayitEklemePageState extends State<KayitEklemePage> {
                       validator: (value) {
                         if (value.isEmpty) {
                           isValidate = false;
-                          return "Bölüm Girniz";
+                          return "Bölüm Giriniz";
                         } else {
                           return null;
                         }
@@ -330,7 +330,7 @@ class _KayitEklemePageState extends State<KayitEklemePage> {
                         'tc': tcController.text,
                         'ad': adController.text,
                         'tel': telController.text,
-                        'şehir': sehirController.text,
+                        'şehir': dropdownValue,
                         'email': emailController.text,
                         'üniversite': universiteController.text,
                         'bolum': bolumController.text,
